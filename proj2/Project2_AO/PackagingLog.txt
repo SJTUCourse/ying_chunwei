@@ -1,0 +1,24 @@
+ant:
+<ant>
+  <mkdir dir="C:\Users\PeterYing\Desktop\proj2\Project2_AO\for_redistribution" />
+  <mkdir dir="C:\Users\PeterYing\Desktop\proj2\Project2_AO\for_testing" />
+  <mkdir dir="C:\Users\PeterYing\Desktop\proj2\Project2_AO\for_redistribution_files_only" />
+</ant>
+mcc -C -o Project2_AO -W WinMain:Project2_AO -T link:exe -d C:\Users\PeterYing\Desktop\proj2\Project2_AO\for_testing -v C:\Users\PeterYing\Desktop\proj2\Proj2.m 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+Begin validation of MEX files: Wed Oct 21 01:12:19 2015
+End validation of MEX files: Wed Oct 21 01:12:19 2015
+[¾¯¸æ: Adding path "C:\Users\PeterYing\Desktop\proj2" to Compiler path instance.] 
+Parsing file "C:\Users\PeterYing\Desktop\proj2\Proj2.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "C:\Users\PeterYing\Desktop\proj2\Project2_AO\for_testing\readme.txt".
+Packaging...
+Adding custom icon D:\matlab2015a\toolbox\compiler\Resources\default_icon.ico to C:\Users\PeterYing\Desktop\proj2\Project2_AO\for_testing\Project2_AO.exe.
+Attempting to embed the CTF archive into the application C:\Users\PeterYing\Desktop\proj2\Project2_AO\for_testing\Project2_AO.exe.
+Finished embedding CTF archive. Deleting the external CTF archive.
+Creating the bundle...
+Web based installer created at C:\Users\PeterYing\Desktop\proj2\Project2_AO\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 2 minutes and 52 seconds.
