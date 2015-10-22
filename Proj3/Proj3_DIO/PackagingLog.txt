@@ -1,0 +1,24 @@
+ant:
+<ant>
+  <mkdir dir="C:\Users\PeterYing\Desktop\Proj3\Proj3_DIO\for_redistribution" />
+  <mkdir dir="C:\Users\PeterYing\Desktop\Proj3\Proj3_DIO\for_testing" />
+  <mkdir dir="C:\Users\PeterYing\Desktop\Proj3\Proj3_DIO\for_redistribution_files_only" />
+</ant>
+mcc -C -o Proj3_DIO -W WinMain:Proj3_DIO -T link:exe -d C:\Users\PeterYing\Desktop\Proj3\Proj3_DIO\for_testing -v C:\Users\PeterYing\Desktop\Proj3\Proj3.m 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+Begin validation of MEX files: Thu Oct 22 17:15:20 2015
+End validation of MEX files: Thu Oct 22 17:15:20 2015
+[¾¯¸æ: Adding path "C:\Users\PeterYing\Desktop\Proj3" to Compiler path instance.] 
+Parsing file "C:\Users\PeterYing\Desktop\Proj3\Proj3.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "C:\Users\PeterYing\Desktop\Proj3\Proj3_DIO\for_testing\readme.txt".
+Packaging...
+Adding custom icon D:\matlab2015a\toolbox\compiler\Resources\default_icon.ico to C:\Users\PeterYing\Desktop\Proj3\Proj3_DIO\for_testing\Proj3_DIO.exe.
+Attempting to embed the CTF archive into the application C:\Users\PeterYing\Desktop\Proj3\Proj3_DIO\for_testing\Proj3_DIO.exe.
+Finished embedding CTF archive. Deleting the external CTF archive.
+Creating the bundle...
+Web based installer created at C:\Users\PeterYing\Desktop\Proj3\Proj3_DIO\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 3 minutes and 18 seconds.
