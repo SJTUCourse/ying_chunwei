@@ -1,10 +1,10 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="4070824836" file="E:\大四上\signal\ying_chunwei\final\FinalGUI.prj" location="E:\大四上\signal\ying_chunwei\final" name="FinalGUI" preferred-package-location="E:\大四上\signal\ying_chunwei\final\FinalGUI\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>FinalGUI</param.appname>
+  <configuration build-checksum="2960756689" file="E:\大四上\signal\ying_chunwei\final\SignalInOut.prj" location="E:\大四上\signal\ying_chunwei\final" name="SignalInOut" preferred-package-location="E:\大四上\signal\ying_chunwei\final\SignalInOut\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>SignalInOut</param.appname>
     <param.icon />
     <param.icons />
     <param.version>1.0</param.version>
-    <param.authnamewatermark />
+    <param.authnamewatermark>Ying Chunwei</param.authnamewatermark>
     <param.email />
     <param.company />
     <param.summary />
@@ -12,13 +12,13 @@
     <param.screenshot />
     <param.guid />
     <param.net.saved.interface />
-    <param.installpath.string>\FinalGUI\</param.installpath.string>
+    <param.installpath.string>\SignalInOut\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
-    <param.intermediate>${PROJECT_ROOT}\FinalGUI\for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}\FinalGUI\for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}\FinalGUI\for_redistribution</param.output>
+    <param.intermediate>${PROJECT_ROOT}\SignalInOut\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\SignalInOut\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\SignalInOut\for_redistribution</param.output>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
     <param.embed.ctf>true</param.embed.ctf>
@@ -42,7 +42,6 @@
       <param.icon />
       <param.icons />
       <param.version />
-      <param.authnamewatermark />
       <param.email />
       <param.company />
       <param.summary />
@@ -89,9 +88,9 @@
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\FinalGUI\for_testing" name="readme.txt" optional="true">E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\FinalGUI\for_testing" name="splash.png" optional="false">E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\FinalGUI\for_testing" name="FinalGUI.exe" optional="false">E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing\FinalGUI.exe</file>
+      <file location="${PROJECT_ROOT}\SignalInOut\for_testing" name="readme.txt" optional="true">E:\大四上\signal\ying_chunwei\final\SignalInOut\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\SignalInOut\for_testing" name="splash.png" optional="false">E:\大四上\signal\ying_chunwei\final\SignalInOut\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\SignalInOut\for_testing" name="SignalInOut.exe" optional="false">E:\大四上\signal\ying_chunwei\final\SignalInOut\for_testing\SignalInOut.exe</file>
     </build-deliverables>
     <workflow />
     <matlab>

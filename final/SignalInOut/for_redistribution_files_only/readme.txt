@@ -33,8 +33,8 @@ NOTE: You will need administrator rights to run MCRInstaller.
 
 Files to package for Standalone 
 ================================
--FinalGUI.ctf (component technology file)
--FinalGUI.exe
+-SignalInOut.ctf (component technology file)
+-SignalInOut.exe
 -MCRInstaller.exe 
    -if end users are unable to download the MATLAB runtime using the above  
     link, include it when building your component by clicking 

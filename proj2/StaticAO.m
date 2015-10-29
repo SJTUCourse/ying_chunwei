@@ -256,6 +256,9 @@ if (Duration ~= -1 && time >= Duration)
     set(handles.OutputStart,'Enable','on');
     set(handles.OutputStop,'Enable','off');
     set(handles.OutputRestart,'Enable','off');
+    set(handles.SrateReset,'Enable','on');
+    set(handles.FreqReset,'Enable','on');
+    set(handles.OutputModeReset,'Enable','on');
 end
 setappdata(Handle2,'time',time);
 setappdata(Handle2,'i',i);

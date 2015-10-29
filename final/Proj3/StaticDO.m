@@ -133,6 +133,9 @@ if (data.Duration ~= -1 && time > data.Duration)
     set(handles.OutputRestart,'Enable','off');
     set(handles.FreqReset,'Enable','off');
     set(handles.DurationReset,'Enable','off');
+    set(handles.OutputRestart,'Enable','off');
+    set(handles.FreqReset,'Enable','on');
+    set(handles.DurationReset,'Enable','on');
     OutputTimer = getappdata(Handle3,'OutputTimer');
     stop(OutputTimer);
     delete(OutputTimer);
