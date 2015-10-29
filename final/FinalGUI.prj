@@ -1,6 +1,6 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="3769661126" file="C:\Users\PeterYing\Desktop\final\Final_GUI.prj" location="C:\Users\PeterYing\Desktop\final" name="Final_GUI" preferred-package-location="C:\Users\PeterYing\Desktop\final\Final_GUI\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>Final_GUI</param.appname>
+  <configuration build-checksum="4070824836" file="E:\大四上\signal\ying_chunwei\final\FinalGUI.prj" location="E:\大四上\signal\ying_chunwei\final" name="FinalGUI" preferred-package-location="E:\大四上\signal\ying_chunwei\final\FinalGUI\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>FinalGUI</param.appname>
     <param.icon />
     <param.icons />
     <param.version>1.0</param.version>
@@ -12,13 +12,13 @@
     <param.screenshot />
     <param.guid />
     <param.net.saved.interface />
-    <param.installpath.string>\Final_GUI\</param.installpath.string>
+    <param.installpath.string>\FinalGUI\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
-    <param.intermediate>${PROJECT_ROOT}\Final_GUI\for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}\Final_GUI\for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}\Final_GUI\for_redistribution</param.output>
+    <param.intermediate>${PROJECT_ROOT}\FinalGUI\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\FinalGUI\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\FinalGUI\for_redistribution</param.output>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
     <param.embed.ctf>true</param.embed.ctf>
@@ -82,16 +82,16 @@
       <file>${PROJECT_ROOT}\proj2\Proj2.fig</file>
       <file>${PROJECT_ROOT}\proj2\Proj2.m</file>
       <file>${PROJECT_ROOT}\proj2\StaticAO.m</file>
-      <file>${PROJECT_ROOT}\proj3\Proj3.fig</file>
-      <file>${PROJECT_ROOT}\proj3\Proj3.m</file>
-      <file>${PROJECT_ROOT}\proj3\StaticDI.m</file>
-      <file>${PROJECT_ROOT}\proj3\StaticDO.m</file>
+      <file>${PROJECT_ROOT}\Proj3\Proj3.fig</file>
+      <file>${PROJECT_ROOT}\Proj3\Proj3.m</file>
+      <file>${PROJECT_ROOT}\Proj3\StaticDI.m</file>
+      <file>${PROJECT_ROOT}\Proj3\StaticDO.m</file>
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\Final_GUI\for_testing" name="splash.png" optional="false">C:\Users\PeterYing\Desktop\final\Final_GUI\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\Final_GUI\for_testing" name="readme.txt" optional="true">C:\Users\PeterYing\Desktop\final\Final_GUI\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\Final_GUI\for_testing" name="Final_GUI.exe" optional="false">C:\Users\PeterYing\Desktop\final\Final_GUI\for_testing\Final_GUI.exe</file>
+      <file location="${PROJECT_ROOT}\FinalGUI\for_testing" name="readme.txt" optional="true">E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\FinalGUI\for_testing" name="splash.png" optional="false">E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\FinalGUI\for_testing" name="FinalGUI.exe" optional="false">E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing\FinalGUI.exe</file>
     </build-deliverables>
     <workflow />
     <matlab>

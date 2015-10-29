@@ -68,7 +68,7 @@ setappdata(Handle1,'FileNum',FileNum);
 SignalSave = [];
 setappdata(Handle1,'SignalSave',SignalSave);
 h = line;
-set(h,'Marker','*','LineStyle','none');
+set(h,'Marker','*','LineStyle','none','Color','b');
 h.Parent = handles.axes1;
 setappdata(Handle1,'LineHandle',h);
 z = 1;

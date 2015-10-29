@@ -67,7 +67,7 @@ data.Flag = 0;
 setappdata(Handle2,'data',data);
 setappdata(Handle2,'PlotArea',handles.axes1);
 h = line;
-set(h,'Marker','*','LineStyle','none');
+set(h,'Marker','*','LineStyle','none','Color','r');
 h.Parent = handles.axes1;
 setappdata(Handle2,'LineHandle',h);
 set(handles.figure1, 'DeleteFcn', {@DeleteFcn});

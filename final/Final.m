@@ -102,4 +102,3 @@ Proj3();
 
 function DeleteFcn(hObject, eventdata)
 close all;
-clear all;

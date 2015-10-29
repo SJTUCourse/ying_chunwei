@@ -54,23 +54,25 @@ function proj1_OpeningFcn(hObject, eventdata, handles, varargin)
 
 % Choose default command line output for proj1
 handles.output = hObject;
+Handle1 = gcf;
+setappdata(0,'Handle1',Handle1);
 %tappdata(0,'GUIhandles',handles);
 % Update handles structure
 guidata(hObject, handles);
 
-setappdata(0,'PlotArea',handles.axes1);
+setappdata(Handle1,'PlotArea',handles.axes1);
 Srate = 100;
-setappdata(0,'Srate',Srate);
+setappdata(Handle1,'Srate',Srate);
 FileNum = 0;
-setappdata(0,'FileNum',FileNum);
+setappdata(Handle1,'FileNum',FileNum);
 SignalSave = [];
-setappdata(0,'SignalSave',SignalSave);
+setappdata(Handle1,'SignalSave',SignalSave);
 h = line;
 set(h,'Marker','*','LineStyle','none');
 h.Parent = handles.axes1;
-setappdata(0,'LineHandle',h);
+setappdata(Handle1,'LineHandle',h);
 z = 1;
-setappdata(0,'Zoom',z);
+setappdata(Handle1,'Zoom',z);
 set(handles.figure1, 'DeleteFcn', {@DeleteFcn});
 
 
@@ -122,8 +124,9 @@ function Srate_Confirm_Callback(hObject, eventdata, handles)
 % hObject    handle to Srate_Confirm (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+  Handle1 = getappdata(0,'Handle1');
   Srate = str2double(get(handles.Srate_Value, 'String'));
-  setappdata(0,'Srate',Srate);
+  setappdata(Handle1,'Srate',Srate);
   set(handles.Srate_Confirm, 'Enable','off');
   set(handles.Srate_Reset, 'Enable','on');
   set(handles.Srate_Value, 'Enable','off');
@@ -151,14 +154,15 @@ function Start_Rec_Callback(hObject, eventdata, handles)
 % hObject    handle to Start_Rec (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-h = getappdata(0,'LineHandle');
+Handle1 = getappdata(0,'Handle1');
+h = getappdata(Handle1,'LineHandle');
 set(h,'XData',[],'YData',[]);
 set(handles.Stop_Rec, 'Enable','on');
 set(handles.Start_Rec, 'Enable','off');
 PointCount = 0;
-setappdata(0,'PointCount',PointCount);
+setappdata(Handle1,'PointCount',PointCount);
 z = 1;
-setappdata(0,'Zoom',z);
+setappdata(Handle1,'Zoom',z);
 InstantAI();
 set(handles.Srate_Reset, 'Enable','off');
 set(handles.Plus, 'Enable','on');
@@ -170,19 +174,20 @@ function Stop_Rec_Callback(hObject, eventdata, handles)
 % hObject    handle to Stop_Rec (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-SignalSave = getappdata(0,'SignalSave');
-FileNum = getappdata(0,'FileNum');
+Handle1 = getappdata(0,'Handle1');
+SignalSave = getappdata(Handle1,'SignalSave');
+FileNum = getappdata(Handle1,'FileNum');
 save(['Signal',int2str(FileNum)],'SignalSave');
 SignalSave = [];
 FileNum = FileNum+1;
-setappdata(0,'SignalSave',SignalSave);
-setappdata(0,'FileNum',FileNum);
+setappdata(Handle1,'SignalSave',SignalSave);
+setappdata(Handle1,'FileNum',FileNum);
 
-t = getappdata(0,'TimerHandle');
+t = getappdata(Handle1,'TimerHandle');
 stop(t);
 delete(t);
 
-instantAiCtrl = getappdata(0,'instantAiCtrl');
+instantAiCtrl = getappdata(Handle1,'instantAiCtrl');
 instantAiCtrl.Dispose();
 set(handles.Stop_Rec, 'Enable','off');
 set(handles.Start_Rec, 'Enable','on');
@@ -198,10 +203,11 @@ function Plus_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 % XDgree = getappdata(0,'XDgree');
 % XDgree = XDgree+1;
-% setappdata(0,'XDgree',XDgree);
-z = getappdata(0,'Zoom');
+% setappdata(Handle1,'XDgree',XDgree);
+Handle1 = getappdata(0,'Handle1');
+z = getappdata(Handle1,'Zoom');
 z = z*0.5;
-setappdata(0,'Zoom',z);
+setappdata(Handle1,'Zoom',z);
 
 
 % --- Executes on button press in Minus.
@@ -209,18 +215,20 @@ function Minus_Callback(hObject, eventdata, handles)
 % hObject    handle to Minus (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-z = getappdata(0,'Zoom');
+Handle1 = getappdata(0,'Handle1');
+z = getappdata(Handle1,'Zoom');
 z = z*2;
-setappdata(0,'Zoom',z);
+setappdata(Handle1,'Zoom',z);
 
 
 function DeleteFcn(hObject, eventdata)
-t = getappdata(0,'TimerHandle');
+Handle1 = getappdata(0,'Handle1');
+t = getappdata(Handle1,'TimerHandle');
 if (t ~= [])
     stop(t);
     delete(t);
 end
-instantAiCtrl = getappdata(0,'instantAiCtrl');
+instantAiCtrl = getappdata(Handle1,'instantAiCtrl');
 if (instantAiCtrl ~= [])
     instantAiCtrl.Dispose();
 end

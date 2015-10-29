@@ -1,0 +1,25 @@
+ant:
+<ant>
+  <mkdir dir="E:\大四上\signal\ying_chunwei\final\FinalGUI\for_redistribution" />
+  <mkdir dir="E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing" />
+  <mkdir dir="E:\大四上\signal\ying_chunwei\final\FinalGUI\for_redistribution_files_only" />
+</ant>
+mcc -C -o FinalGUI -W WinMain:FinalGUI -T link:exe -d E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing -v E:\大四上\signal\ying_chunwei\final\Final.m -a E:\大四上\signal\ying_chunwei\final\Final.fig -a E:\大四上\signal\ying_chunwei\final\proj1\InstantAI.m -a E:\大四上\signal\ying_chunwei\final\proj1\proj1.fig -a E:\大四上\signal\ying_chunwei\final\proj1\proj1.m -a E:\大四上\signal\ying_chunwei\final\proj2\Proj2.fig -a E:\大四上\signal\ying_chunwei\final\proj2\Proj2.m -a E:\大四上\signal\ying_chunwei\final\Proj3\Proj3.fig -a E:\大四上\signal\ying_chunwei\final\Proj3\Proj3.m -a E:\大四上\signal\ying_chunwei\final\proj2\StaticAO.m -a E:\大四上\signal\ying_chunwei\final\Proj3\StaticDI.m -a E:\大四上\signal\ying_chunwei\final\Proj3\StaticDO.m 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+Begin validation of MEX files: Thu Oct 29 12:37:02 2015
+End validation of MEX files: Thu Oct 29 12:37:02 2015
+[警告: Adding path "E:\大四上\signal\ying_chunwei\final" to Compiler path
+instance.] 
+Parsing file "E:\大四上\signal\ying_chunwei\final\Final.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing\readme.txt".
+Packaging...
+Adding custom icon D:\matlab2015a\toolbox\compiler\Resources\default_icon.ico to E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing\FinalGUI.exe.
+Attempting to embed the CTF archive into the application E:\大四上\signal\ying_chunwei\final\FinalGUI\for_testing\FinalGUI.exe.
+Finished embedding CTF archive. Deleting the external CTF archive.
+Creating the bundle...
+Web based installer created at E:\大四上\signal\ying_chunwei\final\FinalGUI\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 1 minutes and 22 seconds.
