@@ -7,8 +7,8 @@ ant:
 mcc -C -o SignalInOut -W WinMain:SignalInOut -T link:exe -d E:\大四上\signal\ying_chunwei\final\SignalInOut\for_testing -v E:\大四上\signal\ying_chunwei\final\Final.m 
 Compiler version: 6.0 (R2015a)
 Dependency analysis by REQUIREMENTS.
-Begin validation of MEX files: Thu Oct 29 14:19:04 2015
-End validation of MEX files: Thu Oct 29 14:19:04 2015
+Begin validation of MEX files: Sat Oct 31 15:33:54 2015
+End validation of MEX files: Sat Oct 31 15:33:54 2015
 [警告: Adding path "E:\大四上\signal\ying_chunwei\final" to Compiler path
 instance.] 
 Parsing file "E:\大四上\signal\ying_chunwei\final\Final.m"
@@ -22,4 +22,4 @@ Finished embedding CTF archive. Deleting the external CTF archive.
 Creating the bundle...
 Web based installer created at E:\大四上\signal\ying_chunwei\final\SignalInOut\for_redistribution\MyAppInstaller_web.exe.
 Packaging complete.
-Elapsed packaging time was: 1 minutes and 6 seconds.
+Elapsed packaging time was: 2 minutes and 22 seconds.

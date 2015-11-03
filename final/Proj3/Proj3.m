@@ -358,8 +358,9 @@ function OutputRestart_Callback(hObject, eventdata, handles)
 % hObject    handle to OutputRestart (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-OutputTimer = getappdata(Handle3,'OutputTimer');
 Handle3 = getappdata(0,'Handle3');
+OutputTimer = getappdata(Handle3,'OutputTimer');
+
 if (isa(OutputTimer,'timer'))
     if (strcmp(OutputTimer.Running,'on'))
         stop(OutputTimer);

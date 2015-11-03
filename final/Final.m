@@ -72,15 +72,16 @@ function varargout = Final_OutputFcn(hObject, eventdata, handles)
 % Get default command line output from handles structure
 varargout{1} = handles.output;
 set(handles.figure1, 'DeleteFcn', {@DeleteFcn});
-
-
+addpath('./proj1');
+addpath('./proj2');
+addpath('./Proj3');
 
 % --- Executes on button press in AI.
 function AI_Callback(hObject, eventdata, handles)
 % hObject    handle to AI (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-addpath('./proj1');
+
 proj1();
 
 % --- Executes on button press in AO.
@@ -88,7 +89,7 @@ function AO_Callback(hObject, eventdata, handles)
 % hObject    handle to AO (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-addpath('./proj2');
+
 Proj2();
 
 % --- Executes on button press in DIDO.
@@ -96,7 +97,7 @@ function DIDO_Callback(hObject, eventdata, handles)
 % hObject    handle to DIDO (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-addpath('./Proj3');
+
 Proj3();
 
 
